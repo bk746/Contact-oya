@@ -97,8 +97,14 @@
   box-shadow: 0 0 0 3px rgba(63, 42, 23, 0.15), 0 8px 16px rgba(55, 32, 17, 0.18);
 }
 
-.pill svg { transition: transform 0.15s ease; }
+.pill svg {
+  transition: transform 0.15s ease;
+  width: clamp(22px, 7vw, 28px);
+  height: clamp(22px, 7vw, 28px);
+  display: block;
+}
 .pill:hover svg { transform: scale(1.06); }
+
 
 /* Tablet */
 @media (min-width: 600px) {
